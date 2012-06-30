@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="settingsLayout">false</item>
+    <item type="id" name="settingsLayoutInner">false</item>
+    <item type="id" name="displaySettings">false</item>
+    <item type="id" name="myText">false</item>
+    <item type="id" name="wifiSettings">false</item>
+    <item type="id" name="gpsSettings">false</item>
+    <item type="id" name="bluetoothSettings">false</item>
+    <item type="id" name="widget">false</item>
+    <item type="id" name="widgetimage">false</item>
+</resources>

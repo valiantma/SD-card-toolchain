@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:textColor="#ff000000" android:id="@id/settingsLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/settingsLayoutInner" android:background="@drawable/battery300" android:layout_width="240.0dip" android:layout_height="300.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:id="@id/displaySettings" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="55.0dip" android:text="Display" android:layout_below="@id/myText" />
+        <Button android:id="@id/wifiSettings" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="6.0dip" android:text="Wireless" android:layout_below="@id/displaySettings" />
+        <Button android:id="@id/gpsSettings" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="6.0dip" android:text="GPS" android:layout_below="@id/wifiSettings" />
+        <Button android:id="@id/bluetoothSettings" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="6.0dip" android:text="Bluetooth" android:layout_below="@id/gpsSettings" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="329" android:versionName="3.29" package="com.protocol.x.USB"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/usbon">
+        <activity android:theme="@android:style/Theme.Light" android:label="双重挂载SD卡" android:name=".DMSD" android:title="双重挂载SD卡设置">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/widget_name" android:name=".DualSDWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_def" />
+        </receiver>
+        <service android:name=".DualSDWidget$UpdateService" />
+        <receiver android:label="SDInfo" android:name=".SDInfo">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.UMS_CONNECTED" />
+                <action android:name="android.intent.action.UMS_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="12" />
+</manifest>

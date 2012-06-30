@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="个性化设置">
+        <CheckBoxPreference android:title="Auto" android:key="MountOnPowerConnection" android:summary="plugifconfig。" android:defaultValue="false" />
+        <CheckBoxPreference android:title="usbauto" android:key="MountOnConnection" android:summary="usbautoforall。" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Mscan" android:key="SDMediaScanner" android:summary="Inauto." android:defaultValue="false" />
+        <CheckBoxPreference android:title="Notc" android:key="Toasty" android:summary="discreen。" android:defaultValue="true" />
+        <Preference android:title="author" android:summary="LuciferVegas" />
+    </PreferenceCategory>
+</PreferenceScreen>
